@@ -5,8 +5,8 @@ Vagrant.configure("2") do |config|
   config.vm.box_url = "https://app.vagrantup.com/centos/boxes/7"  # ←この行を追加
   config.vm.box = "centos/7"
   config.vm.box_version = "1905.1"
-  config.vm.synced_folder "./docker", "/home/vagrant/docker", create:true, owner: "vagrant", group: "vagrant", type: 'virtualbox', mount_options: ['dmode=777','fmode=755']
-  config.vm.synced_folder "./docker/logs", "/home/vagrant/docker/logs", create:true, owner: "vagrant", group: "vagrant", type: 'virtualbox', mount_options: ['dmode=777','fmode=777']
+  config.vm.synced_folder "./docker", "/home/vagrant/docker", create:true, owner: "vagrant", group: "vagrant", type: 'virtualbox', mount_options: ['dmode=777','fmode=777']
+  config.vm.synced_folder "./docker/docker/mysql", "/home/vagrant/docker/docker/mysql", create:true, owner: "vagrant", group: "vagrant", type: 'virtualbox', mount_options: ['dmode=777','fmode=755']
   
   config.vm.network "private_network", ip: "192.168.33.50"
 
