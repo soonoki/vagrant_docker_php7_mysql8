@@ -1,37 +1,43 @@
 # vagrant-docker-php7-mysql
 
-## ŠÂ‹«
+## ç’°å¢ƒ
 
 - PHP7.3
 - MySQL8.0
 - nginx
 - composer
 
-## Àsè‡
+## å®Ÿè¡Œæ‰‹é †
 
-- vagrant‹N“®
+- git clone
+
+```
+git clone https://github.com/soonoki/vagrant_docker_php7_mysql8.git project_name
+```
+
+- vagrantèµ·å‹•
 
 ```
 vagrant up
 ```
 
-- vagrantÚ‘±
+- vagrantæ¥ç¶š
 
 ```
 vagrant ssh
 ```
 
-- dockerƒRƒ“ƒeƒi‹N“®
+- dockerã‚³ãƒ³ãƒ†ãƒŠèµ·å‹•
 
 ```
 cd ~/docker
 docker-compose -d 
 
-# ‰‰ñ‚Ì‚İ
+# åˆå›ã®ã¿
 docker-compose -d --build
 ```
 
-- mysqlÚ‘±
+- mysqlæ¥ç¶š
 
 ```
 docker-compose exec db mysql -u myproject -p
